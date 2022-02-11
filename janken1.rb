@@ -39,7 +39,6 @@ def janken
   puts "あっち向いて〜。。。。"
   puts "[0]:(上) \n[1]:(下) \n[2]:(右) \n[3]:(左)"
   
-
  
   player_hand2 = gets.to_i
 
@@ -58,17 +57,24 @@ case case_pattern
  when "あなたの勝ちです"
   puts "ホイ！"
   puts "あなた:#{atchimuitehois[player_hand2]},相手:#{atchimuitehois[program_hand2]}"
-  puts "処理を終了します"
  when "負け"
   puts "ホイ！"
   puts "相手:#{atchimuitehois[program_hand2]},あなた:#{atchimuitehois[player_hand2]}"
-  puts "処理を終了します"
+ end
+ 
+ 
+ if player_hand2 == program_hand2
+  puts "あなたの勝ちです"
+  puts "処理を終了します。"
+  return false
+ else
+  return true
  end
 end
+
 
 
 next_game = true
 while next_game
   next_game = janken
-  
 end
