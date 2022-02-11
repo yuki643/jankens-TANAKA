@@ -58,13 +58,11 @@ case case_pattern
  when "あなたの勝ちです"
   puts "ホイ！"
   puts "あなた:#{atchimuitehois[player_hand2]},相手:#{atchimuitehois[program_hand2]}"
-  puts "----------------------"
-  return true
+  puts "処理を終了します"
  when "負け"
   puts "ホイ！"
   puts "相手:#{atchimuitehois[program_hand2]},あなた:#{atchimuitehois[player_hand2]}"
-  puts "----------------------"
-  return true
+  puts "処理を終了します"
  end
 end
 
