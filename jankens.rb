@@ -71,7 +71,7 @@ case case_pattern
   return true
  end
 end
-
+puts "コリアタウン"
 
 
 next_game = true
